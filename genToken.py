@@ -9,7 +9,7 @@ import string
 # read commandline and do some error checks
 email=str(sys.argv[1])
 if "@" not in email:
- print "Usage: genWatchToken.py myemail@domain"
+ print "Usage: genToken.py myemail@domain"
  sys.exit(1)
 # store everything before @domain.tld and cleanup
 name=email[:email.find('@')].replace('.','')
